@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(video_reader)
+find_package(OpenCV REQUIRED)
+add_executable(Video_reader video_reader.cpp)
+target_link_libraries(Video_reader ${OpenCV_LIBS})
